@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  background-color: #ffffff;
+}
+
+.cabecalho {
+  position:center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: white;
+  align-content: center;
+  word-spacing: 20px;
+  left: 0; 
+  right: 0;
+  margin: auto;
+  
+}
+
+.links {
+    color: #FF33AD;
+    word-spacing: 20px;
+ 
+}
+
+.icons {
+    color: #FF33AD;
+    word-spacing: 10px;
+    font-size: 18px;
+    
+}
+
+.user {
+    color: #FF33AD;
+}
+
+.colecao {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.colec {
+    margin: auto;
+    display: block;
+    justify-content: center;
+}
+
+.nomes {
+ display: flex;
+ justify-content: space-around;
+ display: inline-block;
+ color: #FF33AD;
+}
+
+.meio {
+ background-color: #FF33AD;
+}
+
+.prom {
+    color: white;
+    text-align: center;
+
+}
+
+.skipper {
+    position: absolute;
+    width: 207px;
+    height: 50px;
+    left: 360px;
+    top: 1029px;
+    border-color: #ffeef8;
+}
+
+.ken {
+    position: absolute;
+    width: 207px;
+    height: 50px;
+    left: 880px;
+    top: 1020px;
+    border-color: #ffeef8;
+    
+
+}
+
+.sereia {
+        position: absolute;
+        width: 207px;
+        height: 50px;
+        left: 890px;
+        top: 1310px;
+        border-color: #ffeef8;
+}
+
+.dream {
+        position: absolute;
+        width: 207px;
+        height: 50px;
+        left: 350px;
+        top: 1320px;
+        border-color: #ffeef8;
+}
+
+
+
+
+.number {
+    color: #FF33AD;
+}
+
+footer {
+    position: absolute;
+    color: #FF33AD;
+    align-items: center;
+    font-size: 36px;
+    /*não consigo centralizar isso*/
+
+}
+
+
+
+  
