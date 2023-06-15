@@ -1,0 +1,43 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const form = document.querySelector("form");
+    form.addEventListener("submit", handleFormSubmit);
+  });
+  
+  function handleFormSubmit(event) {
+    event.preventDefault();
+    
+    const emailInput = document.querySelector("input[type='email']");
+    const passwordInput = document.querySelector("input[type='password']");
+    const confirmPasswordInput = document.querySelectorAll("input[type='password']")[1];
+    
+    const email = emailInput.value;
+    const password = passwordInput.value;
+    const confirmPassword = confirmPasswordInput.value;
+    
+    if (validatePassword(password, confirmPassword)) {
+      const user = {
+        email: email,
+        password: password
+      };
+      
+      console.log("Novo usuário:", user);
+      exibirMensagemDeConfirmacao();
+    } else {
+      alert("A senha e a confirmação de senha não correspondem.");
+    }
+    
+    // Limpar campos do formulário
+    emailInput.value = "";
+    passwordInput.value = "";
+    confirmPasswordInput.value = "";
+  }
+  
+  function validatePassword(password, confirmPassword) {
+    return password === confirmPassword;
+  }
+
+  function exibirMensagemDeConfirmacao() {
+    alert("Cadastro realizado com sucesso!");
+    window.location.href = "home.html";
+  }
+  
